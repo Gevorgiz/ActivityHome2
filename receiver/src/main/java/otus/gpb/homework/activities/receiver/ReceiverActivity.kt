@@ -12,7 +12,9 @@ class ReceiverActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_receiver)
 
-        val key = intent.extras?.getString("KEY")
-        Log.d(TAG, "extra key:$key")
+        val title = intent.extras?.getString("title")
+        val year = intent.extras?.getString("year")
+        val description = intent.extras?.getString("description")
+        //Log.d(TAG, "extra key:$key")
     }
 }
